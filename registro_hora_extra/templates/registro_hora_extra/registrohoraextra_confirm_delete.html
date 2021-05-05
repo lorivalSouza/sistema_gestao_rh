@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block main %}
-<h1>Deletar funcionário</h1> <br><br><br>
+<h1>Deletar registro de hora extra</h1> <br><br><br>
     <form method="post">
         {% csrf_token %}
         <h2>Você está certo que quer deseja deletar o {{ object }}</h2>
         {{ form }}
         <button type="submit" class="btn btn-danger">Confirmar</button>
-        <a href="{% url 'list_funcionario' %} " class="btn btn-warning">Cancelar</a>
+        <a href="{% url 'list_hora_extra' %} " class="btn btn-warning">Cancelar</a>
     </form>
 {% endblock %}
